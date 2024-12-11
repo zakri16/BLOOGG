@@ -1,0 +1,59 @@
+/* تنسيق شريط التنقل */
+.navbar {
+    background-color: #0073e6;
+    overflow: hidden;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #005bb5;
+    color: #fff;
+}
+
+/* تنسيق القائمة المنسدلة */
+.dropdown-content {
+    display: none; /* مخفية افتراضيًا */
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 150px;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* عرض القائمة عند مرور الماوس */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
